@@ -10,7 +10,7 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <Link href="/feed">Feed</Link>
+            <Link href="/feed" prefetch={true}>Feed</Link>
           </li>
           <li>
             <Link className='cta-link' href="/new-post">New Post</Link>
