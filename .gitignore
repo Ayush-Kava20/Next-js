@@ -1,0 +1,10 @@
+# Ignore all node_modules in every subfolder
+node_modules/
+
+# Ignore build output
+.next/
+out/
+
+# Misc
+.DS_Store
+.env
