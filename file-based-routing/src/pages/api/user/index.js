@@ -3,7 +3,6 @@ import { MongoClient } from "mongodb";
 export default async function handler(req, res){
     if (req.method === 'POST') {
         const email = req.body.email;
-        console.log(process.env.MONGODB_URI);
 
         if (!email || !email.includes('@')) {
             res.status(422).json({ message: 'Invalid email address.' });
