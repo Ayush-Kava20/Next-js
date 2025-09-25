@@ -1,7 +1,7 @@
 ---
 title: 'Getting Started with NextJS'
 date: '2022-10-16'
-image: post-1.jpg
+image: getting-started-nextjs.png
 excerpt: NextJS is a the React framework for production - it makes building fullstack React apps and sites a breeze and ships with built-in SSR.
 isFeatured: true
 ---
@@ -28,6 +28,6 @@ In this article, we'll dive into the core concepts and features NextJS has to of
 
 ## File-based Routing
 
-![Create routes via your file + folder structure](post-2.png)
+![Create routes via your file + folder structure](nextjs-file-based-routing.png)
 
 ... More content ...
