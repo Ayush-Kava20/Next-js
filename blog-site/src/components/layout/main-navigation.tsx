@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function MainNavigation() {
   return (
-    <header className="main-header text-white p-4 flex justify-between items-center h-20 text-xl top-0 sticky">
+    <header className="main-header text-white p-4 flex justify-between items-center h-20 text-xl ">
       <h1 className="text-2xl font-bold">
         <Link href="/">My Blog</Link>
       </h1>
