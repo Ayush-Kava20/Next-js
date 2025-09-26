@@ -26,10 +26,10 @@ async function handler(req: NextApiRequest, res: NextApiResponse) {
       res.status(500).json({ error: 'Failed to connect to database' });
       return;
     }
-
+// MONGODB_URI = "mongodb+srv://nextjs-user:Next@cluster0.4umgihu.mongodb.net/nextjs?retryWrites=true&w=majority&appName=Cluster0"
     const db = client.db();
     try {
-      const result = await db.collection('messages').insertOne(newMessage);
+      const result = await db.collection(process.env.MONGODB_COLLECTION as string).insertOne(newMessage);
     } catch (error) {
       client.close();
       res.status(500).json({ error: 'Failed to insert message' });
